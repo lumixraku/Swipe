@@ -60,14 +60,8 @@
             <div class="swiper-slide">Slide 1</div>
             <div class="swiper-slide">Slide 2</div>
             <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-            <div class="swiper-slide">Slide 10</div>
         </div>
+        <div class="swiper-pagination"></div>
     </div>
 
     <!-- Swiper JS -->
@@ -76,13 +70,16 @@
     <!-- Initialize Swiper -->
     <script>
     //样式1
-    // var swiper = new Swiper('.swiper-container');
+    var swiper = new Swiper('.swiper-container',{
+        pagination: '.swiper-pagination'
+    });
 
     //样式2
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto',
-        spaceBetween: 30
-    });
+    // var swiper = new Swiper('.swiper-container', {
+    //     pagination: '.swiper-pagination',
+    //     slidesPerView: 'auto', //slide并不占满整个容器
+    //     spaceBetween: 30
+    // });
     </script>
 </body>
 </html>
